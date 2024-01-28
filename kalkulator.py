@@ -3,9 +3,9 @@ def kalkulator():
 
 	while True:
 		try:
-			numi = float(input("Podaj pierwsza liczbe: "))
+			num1 = float(input("Podaj pierwsza liczbe: "))
 			operacja = input("Podaj operacje (+, -, *, /): ")
-			num2 = float(input("Podaj druga liczba: "))
+			num2 = float(input("Podaj druga liczbe: "))
 
 			if operacja == '+':
 				wynik = num1 + num2
@@ -25,7 +25,7 @@ def kalkulator():
 				print("Niedozwolona operacja")
 				continue
 
-			print (f"Wynnik: {wynik}")
+			print (f"Wynik: {wynik}")
 
 		except ValueError:
 			print("Nieprawidlowe dane wejsciowe.")
